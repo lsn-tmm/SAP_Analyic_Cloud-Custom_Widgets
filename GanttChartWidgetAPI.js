@@ -343,5 +343,5 @@ gantt.attachEvent("onAfterTaskAdd", (id, task) => {
 
     }
 
-    customElements.define('gantt-chart-widget-api', GanttChartWidgetAPI);
+    customElements.define('gantt-chart-api', GanttChartWidgetAPI);
 })();
