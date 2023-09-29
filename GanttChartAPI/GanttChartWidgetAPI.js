@@ -172,7 +172,7 @@ this._shadowRoot.getElementById('runJob').addEventListener('click', () => window
 
 // Load SACAPI_DataImport.js
         const script = document.createElement('script');
-        script.src = 'https://raw.githubusercontent.com/lsn-tmm/SAP_Analyic_Cloud-Custom_Widgets/main/SACAPI_DataImport.js';
+        script.src = 'https://lsn-tmm.github.io/SAP_Analyic_Cloud-Custom_Widgets/GanttChartAPI/SACAPI_DataImport.js';
         document.head.appendChild(script);
             
         }
