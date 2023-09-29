@@ -46,7 +46,6 @@
         .catch(error => console.error('Error:', error));
     }
     
-	//Global function
     window.getAccessToken = getAccessToken;
     
     function getCsrfToken(messagesElement) {
