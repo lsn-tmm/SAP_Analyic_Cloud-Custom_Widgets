@@ -26,7 +26,7 @@
     };
 
 
-    function getAccessToken(messagesElement) {
+    window.getAccessToken = function getAccessToken(messagesElement) {
         return fetch(tokenUrl, {
             method: 'POST',
             headers: {
@@ -46,7 +46,7 @@
         .catch(error => console.error('Error:', error));
     }
     
-    window.getAccessToken = getAccessToken;
+    //window.getAccessToken = getAccessToken;
     
     function getCsrfToken(messagesElement) {
         if (!accessToken) {
