@@ -88,6 +88,8 @@ input:checked + .slider:before {
 
      <div id="image-container"> <svg width="750" height="100">  </svg></div> 
     <div id="chart"></div>
+ <div>    <a href="https://www.linkedin.com/company/planifyit" target="_blank" class="follow-link">Follow us on Linkedin - Planifyit</a>
+</div>
 
 
 <div style="display: flex; align-items: center;">
@@ -173,18 +175,9 @@ this._shadowRoot.getElementById('runJob').addEventListener('click', () => window
             this._shadowRoot.appendChild(dhtmlxGanttScript);
 
 
-		// Load SACAPI_DataImport.js
+// Load SACAPI_DataImport.js
         const script = document.createElement('script');
-        script.src = 'https://raw.githubusercontent.com/lsn-tmm/SAP_Analyic_Cloud-Custom_Widgets/main/SACAPI_DataImport.js';
-		
-		script.addEventListener('load', () => {
-		console.log('SACAPI_DataImport.js loaded successfully');
-		});
-
-		script.addEventListener('error', () => {
-		console.error('Failed to load SACAPI_DataImport.js');
-		});
-		
+        script.src = 'https://planifyit.github.io/Gantt_Chart_SAC_API/SACAPI_DataImport.js';
         document.head.appendChild(script);
             
         }
@@ -207,28 +200,28 @@ this._shadowRoot.getElementById('runJob').addEventListener('click', () => window
 
         // Log the CSV string
         console.log('CSV string:', csvString);
-		const csvData_raw = 'Version,Date,id,label,startDate,endDate,open,progress\n' + csvString;
+  const csvData_raw = 'Version,Date,id,label,startDate,endDate,open,progress\n' + csvString;
 
         // Return the CSV string
-        console.log('Data_raw:', csvData_raw);
+           console.log('Data_raw:', csvData_raw);
     
         return csvData_raw;
     }
 
 
 
-    // GanttChart methods
-    static get metadata() {
-        console.log('metadata called');
-        return {
-            properties: {
-                myDataBinding: {
-                    type: "object",
-                    defaultValue: {}
-                },
-            }
-        };
-    }
+        // GanttChart methods
+        static get metadata() {
+            console.log('metadata called');
+            return {
+                properties: {
+                    myDataBinding: {
+                        type: "object",
+                        defaultValue: {}
+                    },
+                }
+            };
+        }
 
         onCustomWidgetBeforeUpdate(changedProperties) {
             console.log('onCustomWidgetBeforeUpdate called');
