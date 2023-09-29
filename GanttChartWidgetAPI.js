@@ -88,10 +88,7 @@ input:checked + .slider:before {
 
      <div id="image-container"> <svg width="750" height="100">  </svg></div> 
     <div id="chart"></div>
- <div>    <a href="https://www.linkedin.com/company/planifyit" target="_blank" class="follow-link">Follow us on Linkedin - Planifyit</a>
-</div>
-
-
+    
 <div style="display: flex; align-items: center;">
   <label class="switch">
     <input type="checkbox" id="debugToggle">
@@ -113,8 +110,6 @@ input:checked + .slider:before {
 </div>
 
     `;
-
-
 
     
     class GanttChartWidgetAPI extends HTMLElement {
@@ -177,7 +172,7 @@ this._shadowRoot.getElementById('runJob').addEventListener('click', () => window
 
 // Load SACAPI_DataImport.js
         const script = document.createElement('script');
-        script.src = 'https://planifyit.github.io/Gantt_Chart_SAC_API/SACAPI_DataImport.js';
+        script.src = 'https://raw.githubusercontent.com/lsn-tmm/SAP_Analyic_Cloud-Custom_Widgets/main/SACAPI_DataImport.js';
         document.head.appendChild(script);
             
         }
