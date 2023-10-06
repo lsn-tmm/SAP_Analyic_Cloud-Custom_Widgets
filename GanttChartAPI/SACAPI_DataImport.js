@@ -3,11 +3,11 @@
 
     let accessToken, csrfToken, jobUrl, validateJobURL, runJobURL;
 	//Attention!!!! modify this information, with URLs of your SAC tenant
-    const csrfTokenUrl = 'https://stmicroelectronics-dev.eu20.hcs.cloud.sap/api/v1/csrf';
+    const csrfTokenUrl = 'https://stmicroelectronics-dev.eu10.hcs.cloud.sap/api/v1/csrf';
     const clientId = 'sb-7510438e-0f50-41f6-b3e5-62b1977aa7fd!b6760|client!b3944';
     const clientSecret = '31052957-ed49-4d74-914f-8f7d6e69e726$p4pOz-gwu83CBetsAxP5e9nMpKkcthxP6xxcZ6uFH7Y=';
     const tokenUrl = 'https://stmicroelectronics-dev.authentication.eu20.hana.ondemand.com/oauth/token';
-    const apiEndpoint = 'https://stmicroelectronics-dev.eu20.hcs.cloud.sap/api/v1/dataimport/models/Cdlg2a1kkbj139ea3kjvk86s05k/masterFactData';
+    const apiEndpoint = 'https://stmicroelectronics-dev.eu10.hcs.cloud.sap/api/v1/dataimport/models/Cdlg2a1kkbj139ea3kjvk86s05k/masterFactData';
 
  const jobSettings = {
         "Mapping": {  
